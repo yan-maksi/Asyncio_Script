@@ -1,17 +1,17 @@
 import random
 import logger
 from aiohttp import web
-from consts import eighty_eighty_one, zero, ten
+from consts import EIGHTY_EIGHTY_ONE, ZERO, TEN
 
 logger.loger_debug()
 
-port = eighty_eighty_one
+port = EIGHTY_EIGHTY_ONE
 
 app = web.Application()
 
 
 async def get_data(request):
-    return web.Response(text=str(random.randint(zero, ten)))
+    return web.Response(text=str(random.randint(ZERO, TEN)))
 
 app.router.add_get('/', get_data)
 
