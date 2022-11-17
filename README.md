@@ -32,5 +32,3 @@ async with aiohttp.ClientSession() as session: # Create session
 Create a session and make 2 asynchronous requests to the server
 
 return text1 == text2 compare answers and return the value
-
-Translated with www.DeepL.com/Translator (free version)
